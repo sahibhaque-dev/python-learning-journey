@@ -1,0 +1,26 @@
+from enum import nonmember
+
+hello = True
+print(hello)
+print(type(hello))
+
+name = "sahib"
+sirname="haque"
+print(f"my name is { name} {sirname}")
+
+#list
+sahib=[12,13,17,19]
+
+print(type(sahib))
+
+b1= bytearray(sahib)
+
+print(type(b1))
+
+print("change the value of index 2 of b1 ")
+b1[1]=25
+print(b1[1])
+
+#none type data
+x=None
+print(type(x))

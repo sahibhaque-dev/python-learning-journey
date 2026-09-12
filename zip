@@ -1,0 +1,5 @@
+sahib=['sahib','risa','jisan']
+sahib2=['adrita','piuli','tarim']
+
+print(list(zip(sahib,sahib2)))
+

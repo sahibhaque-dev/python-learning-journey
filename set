@@ -1,0 +1,64 @@
+sahib={'hi', 'hello ', 'how can help you friend '}
+print(sahib)
+print(len(sahib))
+
+for i in range(len(sahib)):
+    print(i)
+
+
+
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)#add method
+tropical.add("banana")#add method
+
+print(thisset)
+print(tropical)
+
+#remove items from sets
+
+remove={2,8,9,45,78,90}
+remove.discard(78)
+print('using update funcion : ',remove)
+remove.remove(8)
+print('using remove funcion : ',remove)
+
+#remove by pop
+
+remove.pop()
+print('using pop funcion : ',remove)#pop always remove first index product
+
+remove.clear ()
+print('using clear funcion : ',remove)
+
+
+# The union() and update() methods joins all items from both sets.
+
+
+set_2={'hi','hello ',67,89,90,9,67,'&&&&'}
+print('we have the set1 : ',set_2)
+set_3={'hellom ',78,87,"%6 hi",67}
+print('we have the set2 : ',set_3)
+set_1={'shib haque' , 'hi ','ki hoise tmr ', 67}
+print('we have the set3 : ',set_1)
+
+set_4= set_2.union(set_3)
+print('we have the joined  set3 : ',set_4)
+set_5 = set_1.update(set_3)
+print('we have( +3) the set 5 : ',set_5)
+
+# ntersection() method keeps ONLY the duplicates.
+
+intersection= set_2.intersection(set_3)
+print('we have the intersection : ',intersection)
+
+# The difference() method keeps the items from the first set that are not in the other set(s).
+different = set_2.difference(set_3)
+print('we have the different : ',different)
+
+# The symmetric_difference() method keeps all items EXCEPT the duplicates.
+
+symetric= set_2.symmetric_difference(set_3)
+print('we have the symetric difference : ',symetric)
+

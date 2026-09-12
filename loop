@@ -1,0 +1,45 @@
+sahib=['sahib', 'mim','maisha ','meharun']
+for x in sahib:
+    print(x)
+print("\n")
+for x in range(len(sahib)):
+    if sahib[x]=='maisha ':
+        print(sahib[x])
+        print("the index number of the product is ",x ,f'or we can say in regular digit {x+1}\n')
+        break
+
+
+print('the leanthof sahib list ',len(sahib))
+for i in range(len(sahib)):
+    print(i)
+
+x=0
+while x<len(sahib):
+    print(sahib[x])
+    x=x+1
+hi=[len(hello)**2 for hello in sahib]
+print(hi)
+
+a=[12,5,8,3,13,15,7,9]
+a.sort()
+print(a)
+
+b=['g','f','r','q','a','c']
+
+b.sort()
+print(b)
+print('print a in reverce ')
+a.sort(reverse=True)
+print(a)
+
+c=a.copy()
+print(c)
+
+d=a+b #join a list
+
+print(d)#join a list by extend fucntion
+a.extend(c)
+print(a)
+
+
+

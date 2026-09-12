@@ -1,0 +1,28 @@
+sahib=['hi', 'helllo ', 56 ]
+sahib.append('haque')
+print(sahib)
+
+sahib2=['hi', 'heloo ',26]
+
+sahib2.insert(1,'sahib')
+print('after change ')
+print(sahib2)
+
+#sahib2.pop()
+print(sahib2)
+
+sahib2.remove(26)
+print('after change  number  ')
+print(sahib2)
+
+del sahib2[0]
+print('after change  [0] index ')
+
+print(sahib2)
+
+sahib3=[12,56,78,90]
+sahib3.clear()#ayatr kaj holo shob clear kora 
+print(sahib3)
+
+
+

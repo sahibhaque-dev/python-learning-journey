@@ -1,0 +1,84 @@
+dic={
+    'dic1':{
+         'name' : "name of the person ",
+         'age ' : 'age of the person ',
+         'course '   : "course that enrolled by the student "
+    },'sahib':{
+        'name': "sahib",
+        'age':22,
+        'course':'CSE'
+
+    },'mim':{
+        'name': "mim",
+        'age':25,
+        'course': 'BDS'
+    }
+}
+
+print(dic['sahib'])
+print('by using get fucntion  :  ',dic.get('sahib'))
+
+print(dic.keys())#by using key fucntion , we can only acces mother dictionary
+
+print(dic.values())
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+car['brand']='BMW'#chnage the or update the vakue of the key
+
+print(car)
+car.update(model="sahib")
+print('after changing the values of miodel by update fucntion ')
+print(car)
+
+#clear a data from dictonary by pop , popitem , del ,
+
+car.pop("model")
+print('after removing by pop fucntoion ',car)
+
+car.popitem()
+print('after removing by popitem fucntoion [it will remove last values ]\n',car)
+car.clear()
+print('after removing by clear ',car)
+data = {
+    "apple": 25,
+    "banana": 40,
+    "mango": 15,
+    "orange": 30
+}
+
+print('\n\n\n\nthe fruit dictionary is : ',data)
+print(data.keys())
+print(data.values())
+
+print('\n')
+
+for x in data:
+    print(x)
+    print(data[x])
+
+print('\n')
+
+for x in data.values():
+    print(x)
+    print('the value')
+
+print('showing both  by using the item fucntion \n')
+
+for x,y in data.items():
+    print(x,y)
+
+for x in data.keys():
+    print(data[x])
+
+
+data2=data.copy()
+print(data2)
+
+data3=dict(dic)
+print(data3)
+

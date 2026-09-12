@@ -1,0 +1,14 @@
+class sahib:
+    phone='i phone'
+    tv='sony'
+    money='1 cr'
+
+class mim:
+    laptop='ASUS'
+    computer='computer GFX'
+    car='BMW'
+class samhan(sahib,mim):
+    phone1='nokia'
+    tv='walton'
+
+print(samhan.phone)

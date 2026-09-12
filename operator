@@ -1,0 +1,39 @@
+a = 5
+b = 3
+print(a + b)                # prints 15
+
+print(f"the power is {a**b}")  # prints 100000 (10^5)
+
+print(f"theregular divison is = {a/b}")
+
+print(f"the floor divison is = {a//b}")
+
+print("hello my frined ")
+
+# What will be the output?
+x = 15
+y = 4
+
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x // y)   # floor division
+print(x % y)    # modulus
+print(x ** y)   # exponent
+
+# Predict the output:
+
+a = 5
+a += 3
+print(a)
+
+a += 10
+print(a)
+
+a%=5
+print(a)
+a//=5
+print(a)
+
+

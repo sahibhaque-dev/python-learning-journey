@@ -12,3 +12,8 @@ class samhan(sahib,mim):
     tv='walton'
 
 print(samhan.phone)
+
+class sarim(samhan):
+    phone2='samsung'
+
+print(sarim.car)

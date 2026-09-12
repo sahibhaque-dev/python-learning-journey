@@ -1,0 +1,27 @@
+class sahib:
+    name=''
+    age=''
+    weight=''
+
+
+s_office=sahib()
+s_university=sahib()
+s_home=sahib()
+
+s_office.name='sahib','piuli'
+s_office.age='18','22'
+s_office.weight='70kg','50kg'
+
+s_university.name='sahib','jafir'
+s_university.age='18','21'
+s_university.weight='70kg','99kg'
+
+s_home.name='sahib','mim'
+s_home.age='18','25'
+s_home.weight='70kg','45kg'
+
+
+print(s_office.name)
+print(s_office.age)
+print(s_office.weight)
+

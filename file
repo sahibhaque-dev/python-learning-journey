@@ -33,6 +33,15 @@ if os.path.exists("raisa.txt"): # we are using exists function to chec k is the 
 else:
   print("The file does not exist")
 
+import module as sahibm  # import korbo file ar name a
+sahibm.sahib()
+sahibm.raisa()
+
+
+print(sahibm.sahib_family_data)
+
+print(sahibm.sahib_family_data['name'])
+
 
 
 

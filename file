@@ -1,0 +1,48 @@
+# we tring to make a file to pratice
+sahib = open("sahib.html", "w")
+
+sahib.write("""
+<html>
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello Sahib!</h1>
+    <p>This is my first HTML file.</p>
+
+    <p>life is all abopt time my friend </p>
+
+</body>
+</html>
+""")
+
+sahib.close()
+
+sahib2=open("sahib.txt", "w")
+sahib2.write('hello my friend how can i help you my friend , end of the dsy we are all alone ')
+sahib2.close()
+
+# import os
+# os.remove("sahib.txt")
+
+
+# we are checking je file achey kina ( with the use of exists funtion )
+import os
+if os.path.exists("raisa.txt"): # we are using exists function to chec k is the filke is avaiblbe
+  os.remove("raisa.txt")
+else:
+  print("The file does not exist")
+
+
+import module as sahibm  # import korbo file ar name a
+sahibm.sahib()
+sahibm.raisa()
+
+
+print(sahibm.sahib_family_data)
+
+print(sahibm.sahib_family_data['name'])
+
+
+
+

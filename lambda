@@ -1,7 +1,9 @@
+#ayta holo 1 ta regular function  
+
 def sum(a,b):
     return a+b
-
-x=lambda a,b: a+b
+# but by lambda we can use it without any name and make it short and ready to use 
+x=lambda a,b: a+b # syntax is [ lamda [parameter ]:[ task] ]
 
 print(sum(1,2))
 print(x(3,5))

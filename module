@@ -1,0 +1,15 @@
+def sahib():
+    print('hello my self sahib haque ')
+
+def maisha ():
+    print('hello my self maisha molla  ')
+
+def raisa ():
+    print('hello my self raisa ')
+
+sahib_family_data={
+    'name': 'mim',
+    'relation' : 'sister',
+    'age' : 42
+}
+

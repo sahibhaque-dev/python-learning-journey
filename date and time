@@ -1,0 +1,17 @@
+import datetime
+
+x=datetime.datetime.now()
+print(x.year)
+print(x.month)
+print(x.day)
+print(x.hour)
+print(x.minute)
+print("\n")
+
+i=0
+while i<10:
+    print(x.second)
+    i+=1
+print(x.strftime("%H:%M:%S"))
+print(x.strftime("%m"))
+print(x.strftime("%d"))

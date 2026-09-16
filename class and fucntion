@@ -1,0 +1,52 @@
+class Cart:
+    def __init__(self):
+        self.items = []  # notun cart e empty list thakbe
+
+    def add(self, item):
+        self.items.append(item)  # item ta list er sheshe jog hobe
+
+    def remove(self, item):
+        try:
+            self.items.remove(item)  # item ta list theke remove hobe
+        except ValueError:
+            print(f'{item} is not in cart')  # item na thakle error na diye message dekhabe
+
+    def list_items(self):
+        return self.items.copy()  # original list na diye copy return korbe (safe)
+
+    def __len__(self):
+        return len(self.items)  # len(cart) call korle koyta item ase seta return korbe
+
+    def __getitem__(self, index):
+        return self.items[index]  # cart[0], cart[1] emon index diye access korte parbe
+
+    def __contains__(self, item):
+        return item in self.items  # 'apple' in cart emon check korte parbe
+
+    def __iter__(self):
+        return iter(self.items)  # for item in cart: emon loop chalate parbe
+
+
+# ---- Example usage ----
+cart = Cart()
+
+cart.add('apple')
+cart.add('banana')
+cart.add('milk')
+
+print(len(cart))          # output: 3  -> __len__ call hoise
+print(cart[0])             # output: apple -> __getitem__ call hoise
+print('banana' in cart)    # output: True -> __contains__ call hoise
+
+for item in cart:           # __iter__ call hoise
+    print(item)
+# output:
+# apple
+# banana
+# milk
+
+cart.remove('banana')
+print(cart.list_items())   # output: ['apple', 'milk']
+
+cart.remove('egg')          # egg cart e nai
+# output: egg is not in cart

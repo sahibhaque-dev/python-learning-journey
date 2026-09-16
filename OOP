@@ -1,0 +1,35 @@
+#contruction
+class parents:# ayta holo 1 ta class
+
+    #ayta holo instant method
+    #ayta print  korar jonne variable declare kora lasgey
+    def sahib(self,name,age):# ayta holo fucntion . ja class ar inside a obejct hishabey achey
+        #parameter a by default [self] use hoy
+        print(f'hello {name} you are {age} years old')
+
+
+    #class method
+    @classmethod # its a decorator # we have to first call this to use call method
+    def sahib2(cls,name,age):
+        #parameter a by default [cls] use hoy
+
+        print(f'hello {name} you are {age} years old')
+
+        #static method
+    @staticmethod
+    def sahib3 ():
+        print('hello my friend nusrat ')
+
+    # class sahib2:
+    #     def __init__(self,name,number):
+    #         print(f'hello my name is  {name} and  my  phone number is  {number}')
+
+p=parents()
+p.sahib('sahib',18)# instant mathod ar jonne variable p declate kore input ditey hoy
+
+# p=sahib2('sahib',255456465456451)
+
+parents.sahib2('raisa',22)# but class method a amra chaile direct main class ar name use kore ay input ditey pari
+
+parents.sahib3()# by using static method
+

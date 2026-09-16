@@ -1,0 +1,12 @@
+class Car:
+    def __init__(self, color, model):
+        self.color = color
+        self.model = model
+
+    def details(self):
+        return f"This car is a {self.color} {self.model}"
+    # def engine(self):
+    #     return f"This car is a {self.color} {self.model}"
+
+car_1 = Car("red", "BMW")
+print(car_1.details())
